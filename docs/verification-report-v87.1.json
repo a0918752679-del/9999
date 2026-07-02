@@ -1,0 +1,158 @@
+{
+  "version": "87.1.0",
+  "created_at": "2026-07-02 16:39:54",
+  "all_checks_passed": true,
+  "summary": "Backend-preserved Rich Menu patch. Original v73 server/package are kept; only Rich Menu assets and payload JSON are updated.",
+  "checks": [
+    {
+      "check": "package.json exists",
+      "passed": true,
+      "output": "/mnt/data/linebot_live_equipment_v87_backend_preserved_richmenu_only/package.json"
+    },
+    {
+      "check": "package start script preserved",
+      "passed": true,
+      "output": "node server.js"
+    },
+    {
+      "check": "server.js preserved",
+      "passed": true,
+      "output": "server.js exists"
+    },
+    {
+      "check": "server does not contain V86 clean homepage",
+      "passed": true,
+      "output": "ok"
+    },
+    {
+      "check": "server contains rich menu update route or LINE logic",
+      "passed": true,
+      "output": "route/line logic detected"
+    },
+    {
+      "check": "node --check server.js",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "original root files preserved",
+      "passed": true,
+      "output": "README.md, ZEABUR_DIRECT_DEPLOY.md, PATCH_NOTES_σì│µÖéµ⌐ƒµ│üσêñσ«Ü_V73.1.md, PATCH_NOTES_σì│µÖéµ⌐ƒµ│üσêñσ«Ü_V73.2.md, PATCH_NOTES_σì│µÖéµ⌐ƒµ│üσêñσ«Ü_V73.3.md, package.json, zeabur.json"
+    },
+    {
+      "check": "json richmenu-field-payload.json",
+      "passed": true,
+      "output": "areas=3"
+    },
+    {
+      "check": "json richmenu-admin-payload.json",
+      "passed": true,
+      "output": "areas=3"
+    },
+    {
+      "check": "json richmenu-info-payload.json",
+      "passed": true,
+      "output": "areas=2"
+    },
+    {
+      "check": "admin payload removed 資料安全",
+      "passed": true,
+      "output": "ok"
+    },
+    {
+      "check": "info payload removed 操作說明",
+      "passed": true,
+      "output": "ok"
+    },
+    {
+      "check": "field payload 3 functions",
+      "passed": true,
+      "output": "3"
+    },
+    {
+      "check": "admin payload 3 functions",
+      "passed": true,
+      "output": "3"
+    },
+    {
+      "check": "info payload 2 functions",
+      "passed": true,
+      "output": "2"
+    },
+    {
+      "check": "image line-richmenu-field.jpg 2500x1686",
+      "passed": true,
+      "output": "2500x1686"
+    },
+    {
+      "check": "image line-richmenu-field.jpg under 1MB",
+      "passed": true,
+      "output": "810731"
+    },
+    {
+      "check": "image line-richmenu-admin.jpg 2500x1686",
+      "passed": true,
+      "output": "2500x1686"
+    },
+    {
+      "check": "image line-richmenu-admin.jpg under 1MB",
+      "passed": true,
+      "output": "697870"
+    },
+    {
+      "check": "image line-richmenu-info.jpg 2500x1686",
+      "passed": true,
+      "output": "2500x1686"
+    },
+    {
+      "check": "image line-richmenu-info.jpg under 1MB",
+      "passed": true,
+      "output": "695773"
+    },
+    {
+      "check": "image line-richmenu-3tabs-overview.jpg 2500x1686",
+      "passed": true,
+      "output": "2500x1686"
+    },
+    {
+      "check": "image line-richmenu-3tabs-overview.jpg under 1MB",
+      "passed": true,
+      "output": "615850"
+    },
+    {
+      "check": "no V86 clean package page text",
+      "passed": true,
+      "output": "ok"
+    }
+  ],
+  "images": [
+    {
+      "file": "public/assets/line-richmenu-field.jpg",
+      "width": 2500,
+      "height": 1686,
+      "size_bytes": 810731,
+      "under_1mb": true
+    },
+    {
+      "file": "public/assets/line-richmenu-admin.jpg",
+      "width": 2500,
+      "height": 1686,
+      "size_bytes": 697870,
+      "under_1mb": true
+    },
+    {
+      "file": "public/assets/line-richmenu-info.jpg",
+      "width": 2500,
+      "height": 1686,
+      "size_bytes": 695773,
+      "under_1mb": true
+    },
+    {
+      "file": "public/assets/line-richmenu-3tabs-overview.jpg",
+      "width": 2500,
+      "height": 1686,
+      "size_bytes": 615850,
+      "under_1mb": true
+    }
+  ]
+}

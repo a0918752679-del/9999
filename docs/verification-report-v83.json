@@ -1,0 +1,51 @@
+{
+  "version": "83.0.0",
+  "created_at": "2026-07-02 15:38:09",
+  "base": "linebot_live_equipment_v73_3(2).zip",
+  "scope": "Rich Menu only patch; original backend/admin preserved",
+  "checks": [
+    {
+      "check": "node --check server.js",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "root redirects to admin.html preserved",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "three aliases present",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "updateRichMenu three pages",
+      "passed": true,
+      "output": ""
+    }
+  ],
+  "images": [
+    {
+      "file": "line-richmenu-field.jpg",
+      "width": 1536,
+      "height": 768,
+      "bytes": 398045,
+      "under1MB": true
+    },
+    {
+      "file": "line-richmenu-admin.jpg",
+      "width": 1536,
+      "height": 793,
+      "bytes": 381353,
+      "under1MB": true
+    },
+    {
+      "file": "line-richmenu-info.jpg",
+      "width": 1536,
+      "height": 864,
+      "bytes": 375251,
+      "under1MB": true
+    }
+  ]
+}
